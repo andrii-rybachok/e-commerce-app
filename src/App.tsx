@@ -1,13 +1,13 @@
 import React from 'react';
 import styles from './App.module.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import HomePage from './components/home/HomePage';
+import DefaultLayout from './components/containers/DefaultLayout';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element:<HomePage/>
+    element:<DefaultLayout/>
   }
 ]);
 function App() {
