@@ -12,6 +12,6 @@
     margin-right: 40px;
 }
 
-.list>li>svg{
+.list>li>a>svg{
     margin-right: 20px;
 }

@@ -18,8 +18,7 @@ export default function DefaultHeader(){
           <li>
             <Link to={"#"}>
               <FontAwesomeIcon icon={solid("truck-fast")} />
-              <span>Track y
-          our order</span>
+              <span>Track your order</span>
             </Link>
           </li>
         </ul>
