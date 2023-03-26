@@ -1,5 +1,5 @@
 import styles from './Header.module.css';
-import defaultStyles from '../Default.module.css';
+import defaultStyles from '@/Default.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro'
 import { Link } from 'react-router-dom';

@@ -1,0 +1,51 @@
+.defaultBlock{
+    display: flex;
+    align-items: center;
+    font-family: "Poppins";
+    font-size: 14px;  
+}
+
+.topWrapper{
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.defaultList{
+    font-size: 14px;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    
+}
+.defaultList>li:last-child{
+    margin-right: 0px;
+}
+.defaultList>li>a>svg{
+    font-size: 16px;
+}
+.defaultList>li>a{
+    all:unset;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.defaultList>li>a:hover>span {
+    color:crimson;
+    text-decoration: underline;
+}
+
+.defaultBtn{
+    background-color: #EDA415;
+    font-size: 14px;
+    border-radius: 20px;
+    transition:  0.1s ease-out;
+    color: white;
+    font-size: 14px;
+    border: 0;
+}
+
+.defaultBtn:hover{
+    cursor: pointer;
+    background-color: #efaf30;
+    transition: 0.2s ;
+}
