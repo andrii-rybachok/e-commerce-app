@@ -1,0 +1,24 @@
+
+.headerWrapper{
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    align-items: center;
+    font-family: "Poppins";
+    font-size: 14px;
+}
+
+.defaultList{
+    display: flex;
+    list-style: none;
+}
+.defaultList>li{
+    margin-right: 40px;
+}
+.defaultList>li>svg{
+    margin-right: 20px;
+    font-size: 16px;
+}
+.defaultList>li:last-child{
+    margin-right: 0px;
+}
