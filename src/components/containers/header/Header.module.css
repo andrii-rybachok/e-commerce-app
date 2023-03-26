@@ -1,0 +1,17 @@
+
+.headerBlock{
+    composes : defaultBlock from '../Default.module.css';
+    justify-content: space-between;
+    height: 75px;
+}
+
+.list{
+    composes : defaultList from '../Default.module.css';
+}
+.list>li{
+    margin-right: 40px;
+}
+
+.list>li>svg{
+    margin-right: 20px;
+}
