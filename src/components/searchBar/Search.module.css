@@ -25,14 +25,8 @@
     right: 0;
     width: 132px;
     height: 56px;
-    background-color: #EDA415;
-    
-    color: white;
-    font-size: 14px;
-    border: 0;
-    border-radius: 20px;
     font-family: "PoppinsSemiBold";
-    transition:  0.1s ease-out;
+    composes: defaultBtn from '@/Default.module.css';
 }
 
 .searchBtn:hover{

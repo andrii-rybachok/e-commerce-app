@@ -1,6 +1,5 @@
 .defaultBlock{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     font-family: "Poppins";
     font-size: 14px;  
@@ -33,4 +32,20 @@
 .defaultList>li>a:hover>span {
     color:crimson;
     text-decoration: underline;
+}
+
+.defaultBtn{
+    background-color: #EDA415;
+    font-size: 14px;
+    border-radius: 20px;
+    transition:  0.1s ease-out;
+    color: white;
+    font-size: 14px;
+    border: 0;
+}
+
+.defaultBtn:hover{
+    cursor: pointer;
+    background-color: #efaf30;
+    transition: 0.2s ;
 }

@@ -1,5 +1,5 @@
 import styles from './Header.module.css';
-import defaultStyles from '../Default.module.css';
+import defaultStyles from '@/Default.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro'
 import { Link } from 'react-router-dom';
@@ -18,8 +18,7 @@ export default function DefaultHeader(){
           <li>
             <Link to={"#"}>
               <FontAwesomeIcon icon={solid("truck-fast")} />
-              <span>Track y
-          our order</span>
+              <span>Track your order</span>
             </Link>
           </li>
         </ul>
