@@ -1,0 +1,17 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = web_api_products
+build_property.RootNamespace = web_api_products
+build_property.ProjectDir = D:\серйозна тема\portfolio_projects\react\e-commerce\backend\web-api-products\web-api-products\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\серйозна тема\portfolio_projects\react\e-commerce\backend\web-api-products\web-api-products
+build_property._RazorSourceGeneratorDebug = 
