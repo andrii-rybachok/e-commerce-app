@@ -20,18 +20,11 @@
 }
 
 .searchBtn{
+    composes: defaultPrimaryBtn from '@/Default.module.css';
     position: absolute;
     top: 0;
     right: 0;
     width: 132px;
     height: 56px;
     font-family: "PoppinsSemiBold";
-    composes: defaultBtn from '@/Default.module.css';
-}
-
-.searchBtn:hover{
-    cursor: pointer;
-    background-color: #efaf30;
-    transition: 0.2s ;
-
 }

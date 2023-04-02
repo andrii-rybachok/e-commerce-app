@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "vNJT5uJBl/XhyyioCj7ZGG8qZ3dmGCysVNwNRWbttfboQGhYbGXNG++oFjwJlQAWamCOOCRhrdkUVYIxqVjLWA==",
+  "dgSpecHash": "OVbnIeAp2Rg2UNyISpcrT0g03fkbMmAhxWSnvLdGtnPS79In3ji5Q6BxCaNFeaDNwaatZHvbXAIj0AdzxPaVqQ==",
   "success": true,
   "projectFilePath": "D:\\серйозна тема\\portfolio_projects\\react\\e-commerce\\backend\\web-api-products\\web-api-products\\web-api-products.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Animeshka\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Animeshka\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Animeshka\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\Animeshka\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
@@ -14,7 +15,7 @@
     "C:\\Users\\Animeshka\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.4\\microsoft.aspnetcore.identity.ui.7.0.4.nupkg.sha512",
     "C:\\Users\\Animeshka\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.0\\microsoft.aspnetcore.openapi.7.0.0.nupkg.sha512",
     "C:\\Users\\Animeshka\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
-    "C:\\Users\\Animeshka\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\Animeshka\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Animeshka\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.1\\microsoft.data.sqlclient.5.0.1.nupkg.sha512",
     "C:\\Users\\Animeshka\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.0.1\\microsoft.data.sqlclient.sni.runtime.5.0.1.nupkg.sha512",
     "C:\\Users\\Animeshka\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.4\\microsoft.entityframeworkcore.7.0.4.nupkg.sha512",

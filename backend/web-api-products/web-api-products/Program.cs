@@ -3,11 +3,18 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.FileProviders;
 using web_api_products.DataBase;
 using web_api_products.Models;
-using web_api_products.Models.Gadgets;
 
+var MyAllowSpecificOrigins = "LocalHostPolicy";
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddCors(options =>
+{
+	options.AddPolicy(name: MyAllowSpecificOrigins,
+					  policy =>
+					  {
+						  policy.WithOrigins("http://localhost:3000");
+					  });
+});
 
-// Add services to the container.
 
 builder.Services.AddControllers();
 var connectionString = builder.Configuration.GetConnectionString("ShopApi") ?? throw new InvalidOperationException("No such a connection string");
@@ -37,11 +44,12 @@ if (app.Environment.IsDevelopment())
 app.UseStaticFiles(new StaticFileOptions
 {
 	FileProvider = new PhysicalFileProvider(Path.Combine(builder.Environment.ContentRootPath, "ProductImages")),
-	RequestPath = "/Images"
-}) ; 
+	RequestPath = "/images"
+});
 
 app.UseHttpsRedirection();
 
+app.UseCors();
 app.UseAuthorization();
 
 app.MapControllers();

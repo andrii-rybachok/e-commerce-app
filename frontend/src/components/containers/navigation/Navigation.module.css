@@ -55,7 +55,7 @@
 }
 
 .categoriesBtn{
-    composes:defaultBtn from '@/Default.module.css';
+    composes:defaultPrimaryBtn from '@/Default.module.css';
     height: 100%;
     width: 218px;
     border-radius: 0;
