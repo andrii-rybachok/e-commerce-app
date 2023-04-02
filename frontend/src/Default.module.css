@@ -35,17 +35,35 @@
 }
 
 .defaultBtn{
-    background-color: #EDA415;
     font-size: 14px;
     border-radius: 20px;
     transition:  0.1s ease-out;
-    color: white;
     font-size: 14px;
-    border: 0;
 }
 
 .defaultBtn:hover{
     cursor: pointer;
-    background-color: #efaf30;
     transition: 0.2s ;
+}
+.defaultPrimaryBtn{
+    composes: defaultBtn;
+    border: 0;
+    background-color: #EDA415;
+    color: white;
+}
+
+.defaultPrimaryBtn:hover{
+    background-color: #e98f12;
+}
+
+.defaultSecondBtn{
+    composes: defaultBtn;
+    border: 1px solid #316887;
+    background-color: white;
+    color:#316887;
+}
+
+.defaultSecondBtn:hover{
+    background-color: #316887;
+    color: white;
 }
