@@ -1,0 +1,126 @@
+.miniSlider{
+    composes: defaultBlock from '@/Default.module.css';
+    height: 395px;
+    width: 85%;
+    margin: 0 auto;
+}
+.imgSide{
+    max-height: 100%;
+    margin-left: auto;
+    position: relative;
+}
+.promoImage{
+    max-height: 395px;
+    max-width: 100%;
+    margin-top: 10px;
+}
+.actionSide>h2{
+    color:#1B5A7D;
+    font-size: 42px;
+    font-family: "PoppinsBold";
+}
+.shopBtn{
+    composes: defaultPrimaryBtn from '@/Default.module.css';
+    width: 144px;
+    height: 61px;
+    font-size: 16px;
+    font-family: "PoppinsSemiBold";
+    margin-right: 21px;
+}
+.viewBtn{
+    composes:defaultSecondBtn from '@/Default.module.css';
+    width: 144px;
+    height: 61px;
+    font-size: 16px;
+    font-family: "PoppinsSemiBold";
+}
+.bigYellowCircle{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #EDA415;
+    color: white;
+    display: flex;
+    height: 105px;
+    width: 104px;
+    font-size: 20px;
+    border-radius: 50px;
+    align-items: center;
+    text-align: center;
+}
+.arrow{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    background-color: white ;
+    border-radius: 30px;
+    color: #316887;
+    border: 2px solid #1B5A7D;
+    transition:  0.1s ease-out;
+
+}
+.arrow:hover{
+    transition: 0.2s ease;
+    background-color: #4c96c0;
+    cursor: pointer;
+    color: white;
+}
+:global(.scrolledElement){
+    animation: fadeOut 0.2s,fadeIn 0.2s;
+    -webkit-animation: fadeOut 0.2s,fadeIn 0.2s;
+  -moz-animation:fadeOut 0.2s,fadeIn 0.2s;
+  -o-animation: fadeOut 0.2s,fadeIn 0.2s;
+  -ms-animation: fadeOut 0.2s,fadeIn 0.2s;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  @-moz-keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  @-webkit-keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+   
+  }
+  
+  @-o-keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  @-ms-keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
