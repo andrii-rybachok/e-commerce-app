@@ -1,0 +1,30 @@
+#serachForm{
+    margin-left: 85px;
+    width: 438px;
+    position: relative;
+    border: 1px solid #003F62;
+    
+}
+
+#productSearch{
+    width: 100%;
+    height: 56px;
+    border-radius: 20px;
+    border: 0;
+    padding-left: 25px;
+    font-family: "Poppins";
+}
+
+#productSearch:focus{
+    outline: none;
+}
+
+.searchBtn{
+    composes: defaultPrimaryBtn from '@/Default.module.css';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 132px;
+    height: 56px;
+    font-family: "PoppinsSemiBold";
+}
