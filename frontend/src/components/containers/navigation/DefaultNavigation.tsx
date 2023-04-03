@@ -2,10 +2,10 @@ import styles from './Navigation.module.css';
 import defaultStyles from '@/Default.module.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { solid ,regular} from '@fortawesome/fontawesome-svg-core/import.macro'
+import { solid} from '@fortawesome/fontawesome-svg-core/import.macro'
 
 import { Link } from 'react-router-dom';
-import SearchBar from '../../searchBar/Serchbar';
+import SearchBar from './searchBar/Serchbar';
 import YellowCircle from './YellowCircle';
 
 export default function DefaultNavigation(){
