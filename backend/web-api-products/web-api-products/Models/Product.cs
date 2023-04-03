@@ -17,7 +17,6 @@
 
 		public IEnumerable<Image> ProductImages { get; set; }=new List<Image>();
 
-		public int ProductStorageId { get; set; }
 		public ProductStorage ProductStorage { get; set; }
 
 

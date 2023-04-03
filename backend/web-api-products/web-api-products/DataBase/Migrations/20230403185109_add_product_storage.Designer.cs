@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using web_api_products.DataBase;
 
@@ -11,9 +12,11 @@ using web_api_products.DataBase;
 namespace web_api_products.Migrations
 {
     [DbContext(typeof(ShopDB))]
-    partial class ShopDBModelSnapshot : ModelSnapshot
+    [Migration("20230403185109_add_product_storage")]
+    partial class add_product_storage
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
