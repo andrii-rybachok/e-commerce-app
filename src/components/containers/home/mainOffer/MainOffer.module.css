@@ -12,7 +12,7 @@
 .promoImage{
     max-height: 395px;
     max-width: 100%;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .actionSide>h2{
     color:#1B5A7D;
@@ -67,6 +67,7 @@
     cursor: pointer;
     color: white;
 }
+
 :global(.scrolledElement){
     animation: fadeOut 0.2s,fadeIn 0.2s;
     -webkit-animation: fadeOut 0.2s,fadeIn 0.2s;
