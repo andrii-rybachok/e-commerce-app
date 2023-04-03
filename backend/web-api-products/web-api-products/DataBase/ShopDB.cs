@@ -35,6 +35,11 @@ namespace web_api_products.DataBase
 				.HasForeignKey(x=>x.CategoryId);
 
 			modelBuilder.Entity<Product>()
+				.HasOne(x => x.ProductStorage)
+				.WithOne(x => x.Product)
+				.HasForeignKey<ProductStorage>(x => x.ProductId);
+
+			modelBuilder.Entity<Product>()
 				 .HasDiscriminator<string>("ProductType")
 				 .HasValue<Headphone>("Headphone")
 				 .HasValue<Laptop>("Laptop");

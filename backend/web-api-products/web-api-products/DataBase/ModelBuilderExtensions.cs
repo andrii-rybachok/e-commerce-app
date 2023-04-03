@@ -80,6 +80,20 @@ namespace web_api_products.DataBase
 			};
 			modelBuilder.Entity<Laptop>().HasData(laptops);
 
+			List<ProductStorage> productStorages = new List<ProductStorage>()
+			{
+				new ProductStorage { Id=1, Count=220, IsAvailable=true,ProductId=1},
+				new ProductStorage { Id=2, Count=2, IsAvailable=true,ProductId=2},
+				new ProductStorage { Id=3, Count=202, IsAvailable=true,ProductId=3},
+				new ProductStorage { Id=4, Count=100, IsAvailable=true,ProductId=4},
+				new ProductStorage { Id=5, Count=20, IsAvailable=false,ProductId=5},
+				new ProductStorage { Id=6, Count=5, IsAvailable=true,ProductId=6},
+				new ProductStorage { Id=7, Count=20, IsAvailable=true,ProductId=7},
+				new ProductStorage { Id=8, Count=40, IsAvailable=true,ProductId=8},
+				new ProductStorage { Id=9, Count=10, IsAvailable=true,ProductId=9},
+				new ProductStorage { Id=10, Count=0, IsAvailable=false,ProductId=10},
+			};
+			modelBuilder.Entity<ProductStorage>().HasData(productStorages);
 
 			List<string> headphoneSrcs = new List<string>() {
 				"1_1.jpg" ,
