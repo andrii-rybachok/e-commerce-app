@@ -8,6 +8,7 @@
 .topWrapper{
     width: 80vw;
     margin: 0 auto;
+    
 }
 
 .defaultList{
@@ -58,12 +59,12 @@
 
 .defaultSecondBtn{
     composes: defaultBtn;
-    border: 1px solid #316887;
+    border: 1px solid #1B5A7D;
     background-color: white;
-    color:#316887;
+    color:#1B5A7D;
 }
 
 .defaultSecondBtn:hover{
-    background-color: #316887;
+    background-color: #1f7cae;
     color: white;
 }
