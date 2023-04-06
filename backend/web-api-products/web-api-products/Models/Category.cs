@@ -1,5 +1,4 @@
 ﻿
-
 namespace web_api_products.Models
 {
 	public class Category

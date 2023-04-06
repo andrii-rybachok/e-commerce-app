@@ -15,12 +15,12 @@ namespace web_api_products.DataBase
 
 		public DbSet<Headphone> Headphones { get; set; }
 		public DbSet<Laptop> Laptops { get; set; }
-		public DbSet<Headphone> Categories { get; set; }
+		public DbSet<Category> Categories { get; set; }
 		public DbSet<Image> Images { get; set; }
 		public DbSet<FilterName> FilterNames { get; set; }
 		public DbSet<FilterValue> FilterValues { get; set; }
 		public DbSet<Product> Products { get; set; }
-		public DbSet<Product> Colors { get; set; }
+		public DbSet<Color> Colors { get; set; }
 
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
