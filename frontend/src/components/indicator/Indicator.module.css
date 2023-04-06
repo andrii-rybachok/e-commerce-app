@@ -1,0 +1,18 @@
+.indicator{
+    border: 1px solid #ADADAD;
+    height: 19px;
+    width: 19px;
+    border-radius: 30px;
+    transition: 0.1s ease-out;
+}
+.indicator:hover{
+    cursor: pointer;
+    background-color: #EDA415;
+    transition: 0.2s ease;
+    border: 0;
+}
+.active{
+    composes:indicator;
+    background-color: #EDA415;
+    border: 0;
+}

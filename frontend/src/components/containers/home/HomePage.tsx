@@ -1,6 +1,11 @@
 import MainOffer from "@/components/containers/home/mainOffer/MainOffer";
-import ProductPlate from "@/components/productTale/ProductPlate";
+import ProductPlate from "@/components/productPlate/ProductPlate";
 import IProductPreview from '@/types/products/product/IProductPreview';
+import { MainOfferDataProvider } from "./Providers/MainOfferProvider";
+import PopularProducts from "./popularProducts/PopularProducts";
+import defaultStyles from '@/Default.module.css';
+import { PopularProductsDataProvider } from "./Providers/PopularProductsProvider";
+import Indicator from "@/components/indicator/Indicator";
 
 export default function HomePage(){
     let test:IProductPreview={
@@ -12,9 +17,13 @@ export default function HomePage(){
         price:300
     }
     return (
-        <>
-            <MainOffer></MainOffer>
-            <ProductPlate product={test}/>
-        </>
+        <MainOfferDataProvider>
+            <PopularProductsDataProvider>
+                <div className={defaultStyles.topWrapper}>
+                    <MainOffer/>
+                    <PopularProducts/>
+                </div>
+            </PopularProductsDataProvider>
+        </MainOfferDataProvider>
     );
 }

@@ -1,0 +1,54 @@
+
+
+.title{
+    font-size: 29px;
+    color:#1B5A7D;
+    font-family: "PoppinsSemiBold";
+}
+.topContainer{
+    display: flex;
+    align-items: baseline;
+    margin-top: 80px;
+}
+.btnsContainer{
+    margin-left: auto;
+}
+.categoryBtn{
+    composes:defaultBtn from '@/Default.module.css';
+    width: 139px;
+    height: 45px;
+    background-color: white;
+    color: #1B5A7D;
+    font-size: 16px;
+    border:1px solid #B5B5B5;
+    margin-right: 13px;
+}
+.categoryBtn:hover{
+    cursor: pointer;
+    background-color: #1f7cae;
+    color: white;
+}
+.activeBtn{
+    composes:defaultSecondBtn from '@/Default.module.css';
+    width: 139px;
+    height: 45px;
+    font-size: 16px;
+    margin-right: 13px;
+    font-family: "PoppinsMedium";
+}
+.productPlates{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.productPlates>div{
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+.indicators{
+    display: flex;
+    justify-content: center;
+}
+.indicators>div{
+    margin-right: 10px;
+}

@@ -16,7 +16,7 @@ export default function ProductPlate({product}:{product:IProductPreview}){
     return(
         <div className={styles.plate}>
             <button className={styles.likeBtn}><FontAwesomeIcon icon={solid("heart")} /></button>
-            <img src={product.previewImage} alt="" className={styles.previewImage}/>
+            <img src={"https://localhost:7100/images/big/"+product.previewImage} alt="" className={styles.previewImage}/>
             <h4 className={styles.name}>{product.name}</h4>
             <span className={styles.price}>${product.price}</span>
             <div className={styles.stars} >

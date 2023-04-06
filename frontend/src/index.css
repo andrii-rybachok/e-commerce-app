@@ -21,6 +21,7 @@
 *{
   font-family: "Poppins";
   box-sizing: border-box;
+  overflow-anchor: none;
 }
 body {
   margin: 0;
