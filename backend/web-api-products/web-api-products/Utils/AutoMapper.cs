@@ -1,10 +1,11 @@
 ﻿using AutoMapper;
 using web_api_products.Models;
+using web_api_products.Models.DTO.Categories;
 using web_api_products.Models.DTO.Products;
 
 namespace web_api_products.Utils
 {
-	public static class MapperConfig
+	public static class Mappers
 	{
 		private static string[] getImages(IEnumerable<Image> images)
 		{
@@ -15,7 +16,7 @@ namespace web_api_products.Utils
 			}
 			return names;
 		}
-		public static Mapper InitializeAutomapper()
+		public static Mapper ProductDTOMapper()
 		{
 
 			var config = new MapperConfiguration(cfg =>
@@ -23,9 +24,16 @@ namespace web_api_products.Utils
 				cfg.CreateMap<Product, ProductDTO>()
 				.ForMember(x => x.PreviewImage, act =>act.MapFrom(src=>src.ProductImages.FirstOrDefault().Name))
 				.ForMember(x => x.SecondImage, act => act.MapFrom(src => src.ProductImages.ElementAtOrDefault(1).Name));
+			});
+			var mapper = new Mapper(config);
+			return mapper;
+		}
+		public static Mapper PopularCategoryDTOMapper()
+		{
 
-				//cfg.CreateMap<List<Product>, List<ProductDTO>>();
-
+			var config = new MapperConfiguration(cfg =>
+			{
+				cfg.CreateMap<Category, PopularCategoryDTO>();
 			});
 			var mapper = new Mapper(config);
 			return mapper;
