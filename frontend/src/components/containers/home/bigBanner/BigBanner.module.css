@@ -1,0 +1,36 @@
+.block{
+    background: url("@/../images/promotedBanner.png");
+    height: 417px;
+    width: 1315px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    font-family: "PoppinsMedium";
+}
+.rightBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-left: auto;
+}
+.btn{
+    composes:defaultPrimaryBtn from '@/Default.module.css';
+    width: 134px;
+    height: 45px;
+}
+.bigTitle{
+    color: #2E8FC5;
+    font-size: 41px;
+    margin-top: 35px;
+    font-family: "PoppinsBold";
+    margin-bottom: 12px;
+}
+.smallTitle{
+    margin-top: 0;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 35px;
+}
