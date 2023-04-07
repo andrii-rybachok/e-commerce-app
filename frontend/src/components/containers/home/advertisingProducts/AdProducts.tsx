@@ -3,7 +3,7 @@ import productStyles from './LongPlate.module.css';
 import bigStyles from './BigPlate.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { solid ,regular} from '@fortawesome/fontawesome-svg-core/import.macro'
-import { useMainOffer } from "../Providers/MainOfferProvider";
+import { useMainOffer } from "../providers/MainOfferProvider";
 import { useState } from "react";
 import Indicator from "@/components/indicator/Indicator";
 

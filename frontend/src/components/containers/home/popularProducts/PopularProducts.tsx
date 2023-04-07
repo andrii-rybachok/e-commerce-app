@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import styles from './PopularProducts.module.css';
 import IProductPreview from '@/types/products/product/IProductPreview';
-import { usePopProducts } from '../Providers/PopularProductsProvider';
+import { usePopProducts } from '../providers/PopularProductsProvider';
 import ProductPlate from '@/components/productPlate/ProductPlate';
 import ICategory from '@/types/categories/category/ICategory';
 import axios from 'axios';
