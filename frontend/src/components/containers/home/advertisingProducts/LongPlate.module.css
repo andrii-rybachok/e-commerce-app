@@ -1,0 +1,41 @@
+.plate{
+    height: 241px;
+    width: 493px;
+    border: 1px solid #B6B6B6;
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.name{
+    margin: 0;
+    color: #003F62;
+    font-size: 17px;
+    font-family: "PoppinsMedium";
+}
+.name:hover{
+    cursor: pointer;
+    color:crimson;
+    text-decoration: underline;
+}
+.price{
+    font-size: 17px;
+    font-family: "PoppinsSemiBold";
+    margin-top: 16px;
+    margin-bottom: 16px;
+    display: block;
+}
+.stars{
+    color: #ACACAC;
+}
+.stars>svg{
+    margin-right: 10px;
+    transition: 0.1s ease-out;
+}
+.previewImage{
+    margin-right: 70px;
+    display: block;
+    max-width: 202px;
+    max-height: 168px;
+}

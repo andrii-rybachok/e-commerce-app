@@ -1,0 +1,76 @@
+.bigPlate{
+    width: 803px;
+    height: 505px;
+    border: 1px solid #B6B6B6;
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+    padding: 10px;
+    margin-right: 30px;
+    justify-content: center;
+    position: relative;
+}
+.name{
+    margin: 0;
+    color: #003F62;
+    font-size: 21px;
+    font-family: "PoppinsMedium";
+}
+.name:hover{
+    cursor: pointer;
+    color:crimson;
+    text-decoration: underline;
+}
+.imageBlock{
+    display: flex;
+    align-items: center;
+    width: 385px;
+    height: 380px;
+}
+.previewImage{
+    display: block;
+   max-width: 345px;
+   max-height: 380px;
+}
+.block{
+    display: flex;
+    justify-content: center;
+}
+.buttons{
+    margin-top: 37px;
+}
+.buttons>button{
+    margin-right: 21px;
+}
+.bigBtn{
+    composes: defaultBlueBtn from '@/Default.module.css';
+    height: 60px;
+    width: 204px;
+}
+.smallBtn{
+    composes: defaultBlueBtn from '@/Default.module.css';
+    height: 60px;
+    width: 70px;
+}
+
+.bigBtn>span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #EDA415;
+    border-radius: 30px;
+    color: white;
+    margin-left: 30px;
+}
+.bigBtn>span>svg{
+    margin-top: 7px;
+}
+.indicators{
+    position: absolute;
+    display: flex;
+    bottom: 30px;
+    right: 44%;
+}
+.indicators>div{
+    margin-right: 10px;
+}

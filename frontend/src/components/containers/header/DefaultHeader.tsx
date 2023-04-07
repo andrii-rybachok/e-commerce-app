@@ -5,7 +5,7 @@ import { solid } from '@fortawesome/fontawesome-svg-core/import.macro'
 import { Link } from 'react-router-dom';
 export default function DefaultHeader(){
   return (
-    <header className={defaultStyles.topWrapper}>
+    <header className={styles.header}>
       <div className={styles.headerBlock}>
         <span>Need help? Call us: (+98) 0234 456 789</span>
         <ul className={styles.list}>
