@@ -1,7 +1,7 @@
 .logo{
     width: 140px;
     height: 39px;
-    background: url("@/../images/logo\ 1.svg");
+    background: url("@/../public/images/logo\ 1.svg");
     margin-bottom: 5px;
 }
 .topNavigation{
@@ -9,8 +9,8 @@
     justify-content: space-between;
     height: 100px;
     background-color: #003F62;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .searchSide{
@@ -50,22 +50,27 @@
     composes : defaultBlock from '@/Default.module.css';
     height: 71px;
     background-color: #F4F4F4;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .categoriesBtn{
-    composes:defaultPrimaryBtn from '@/Default.module.css';
+    background-color: #EDA415;
+    color: white;
+    border: 0;
     height: 100%;
     width: 218px;
-    border-radius: 0;
     font-size: 16px;
     font-family: "PoppinsMedium";
     padding-right: 30px;
     position: relative;
     margin-right: 98px;
 }
-
+.categoriesBtn:hover{
+    cursor: pointer;
+    background-color: #e98f12;
+    transition: 0.2s ;
+}
 .categoriesBtn>svg{  
     position: absolute;
     top:39%;

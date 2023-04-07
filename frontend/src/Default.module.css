@@ -6,9 +6,9 @@
 }
 
 .topWrapper{
-    width: 80vw;
+    width: 1315px;
     margin: 0 auto;
-    
+
 }
 
 .defaultList{
@@ -67,4 +67,16 @@
 .defaultSecondBtn:hover{
     background-color: #1f7cae;
     color: white;
+}
+
+.defaultBlueBtn{
+    composes: defaultBtn;
+    background-color: #87BCD9;
+    color:#272727;  
+    border: 0;
+    font-size: 16px;
+    font-family: "PoppinsSemiBold";
+}
+.defaultBlueBtn:hover{
+    background-color: #2ca8eb; 
 }

@@ -7,6 +7,8 @@ import defaultStyles from '@/Default.module.css';
 import { PopularProductsDataProvider } from "./Providers/PopularProductsProvider";
 import Indicator from "@/components/indicator/Indicator";
 import BigBanner from "./bigBanner/BigBanner";
+import AdProducts from "./advertisingProducts/AdProducts";
+import ProsPage from "./pros/ProsPage";
 
 export default function HomePage(){
     let test:IProductPreview={
@@ -24,6 +26,8 @@ export default function HomePage(){
                     <MainOffer/>
                     <PopularProducts/>
                     <BigBanner/>
+                    <AdProducts/>
+                    <ProsPage/>
                 </div>
             </PopularProductsDataProvider>
         </MainOfferDataProvider>

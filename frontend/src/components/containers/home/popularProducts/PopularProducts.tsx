@@ -20,7 +20,7 @@ export default function PopularProducts(){
     const [pagination, setPagination] = useState<Pagination>({
         currentPage:0,
         maxPages:3,
-        maxProductsOnPage:6
+        maxProductsOnPage:8
     });
     useEffect(() => {
       setProducts(initialProducts);
@@ -36,6 +36,7 @@ export default function PopularProducts(){
             setPagination({
                 ...pagination,
                 maxPages:data.length/pagination.maxProductsOnPage,
+                currentPage:0
               });           
         }
         foo();
@@ -84,7 +85,7 @@ export default function PopularProducts(){
                 </div>
             </div>
             <div className={styles.productPlates}>
-                {productPlates.slice(pagination.currentPage*6,pagination.currentPage*6+6)}
+                {productPlates.slice(pagination.currentPage*pagination.maxProductsOnPage,pagination.currentPage*pagination.maxProductsOnPage+pagination.maxProductsOnPage)}
             </div>
             <div className={styles.indicators}>
                 {indicators}

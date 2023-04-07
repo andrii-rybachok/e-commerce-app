@@ -1,0 +1,28 @@
+.block{
+    height: 155px;
+    background-color: #E2F4FF;
+    border-radius: 20px;
+    width:1328px;
+    display: flex;
+    margin-top: 75px;
+    justify-content: space-evenly;
+}
+.pros{
+    color: #003F62;
+    display: flex;
+    align-items: center;
+}
+.pros>img{
+    height: 67px;
+    width: 67px;
+    margin-right: 31px;
+}
+.pros>div>h3{
+    margin: 0;
+    font-size: 22px;
+    font-family: "PoppinsSemiBold";
+}
+.pros>div>p{
+    font-size: 18px;
+    margin: 0;
+}

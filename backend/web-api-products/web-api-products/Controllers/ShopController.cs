@@ -34,7 +34,7 @@ namespace web_api_products.Controllers
 				{
 					randProductIds.Add(randomIndex);
 				}
-			} while (randProductIds.Count != 3);
+			} while (randProductIds.Count != 4);
 
 			List<ProductDTO> products = new List<ProductDTO>();
 			foreach (int productId in randProductIds)

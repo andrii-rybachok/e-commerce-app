@@ -1,4 +1,7 @@
-
+.header{
+    padding-left: 50px;
+    padding-right: 50px;
+}
 .headerBlock{
     composes : defaultBlock from '@/Default.module.css';
     justify-content: space-between;
