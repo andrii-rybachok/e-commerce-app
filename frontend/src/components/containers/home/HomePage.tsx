@@ -10,6 +10,7 @@ import BigBanner from "./bigBanner/BigBanner";
 import AdProducts from "./advertisingProducts/AdProducts";
 import ProsPage from "./pros/ProsPage";
 import Comments from "./fakeComments/Comments";
+import Brands from "./brands/Brands";
 
 export default function HomePage(){
     let test:IProductPreview={
@@ -30,6 +31,7 @@ export default function HomePage(){
                     <AdProducts/>
                     <ProsPage/>
                     <Comments/>
+                    <Brands/>
                 </div>
             </PopularProductsDataProvider>
         </MainOfferDataProvider>
