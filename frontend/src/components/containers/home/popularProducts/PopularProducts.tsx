@@ -1,23 +1,19 @@
 import { useEffect, useState } from 'react';
 import styles from './PopularProducts.module.css';
 import IProductPreview from '@/types/products/product/IProductPreview';
-import { usePopProducts } from '../Providers/PopularProductsProvider';
+
 import ProductPlate from '@/components/productPlate/ProductPlate';
 import ICategory from '@/types/categories/category/ICategory';
 import axios from 'axios';
 import Indicator from '@/components/indicator/Indicator';
-
-interface Pagination{
-    currentPage:number,
-    maxPages:number,
-    maxProductsOnPage:number
-}
+import { usePopProducts } from '../providers/PopularProductsProvider';
+import IPagination from '@/types/pagination/IPagination';
 
 export default function PopularProducts(){
     const [activeCategory, setActiveCategory] = useState<ICategory>({id:0,name:"Headphones"});
     let initialProducts =usePopProducts();
     const [products, setProducts] = useState<IProductPreview[]>([]);
-    const [pagination, setPagination] = useState<Pagination>({
+    const [pagination, setPagination] = useState<IPagination>({
         currentPage:0,
         maxPages:3,
         maxProductsOnPage:8

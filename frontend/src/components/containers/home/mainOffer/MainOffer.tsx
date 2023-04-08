@@ -5,7 +5,7 @@ import IProductPreview from '@/types/products/product/IProductPreview';
 import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro'
-import { useMainOffer } from '../Providers/MainOfferProvider';
+import { useMainOffer } from '../providers/MainOfferProvider';
 import Indicator from '@/components/indicator/Indicator';
 
 export default function MainOffer(){
