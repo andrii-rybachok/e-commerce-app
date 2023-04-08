@@ -9,6 +9,7 @@ import Indicator from "@/components/indicator/Indicator";
 import BigBanner from "./bigBanner/BigBanner";
 import AdProducts from "./advertisingProducts/AdProducts";
 import ProsPage from "./pros/ProsPage";
+import Comments from "./fakeComments/Comments";
 
 export default function HomePage(){
     let test:IProductPreview={
@@ -28,6 +29,7 @@ export default function HomePage(){
                     <BigBanner/>
                     <AdProducts/>
                     <ProsPage/>
+                    <Comments/>
                 </div>
             </PopularProductsDataProvider>
         </MainOfferDataProvider>

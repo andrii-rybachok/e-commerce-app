@@ -18,6 +18,11 @@
   src: local("PoppinsBold"),
        url("./fonts/Poppins/Poppins-Bold.ttf") format("truetype");
 }
+@font-face {
+  font-family: 'PoppinsRegular';
+  src: local("PoppinsRegular"),
+       url("./fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+}
 *{
   font-family: "Poppins";
   box-sizing: border-box;
