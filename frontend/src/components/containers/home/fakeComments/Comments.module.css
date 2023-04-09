@@ -8,10 +8,10 @@
 .indicators{
     display: flex;
     justify-content: center;
+    margin-top: 47px;
 }
 .indicators>div{
     margin-right: 10px;
-    margin-top: 47px;
 }
 .commentBlock{
     width: 432px;

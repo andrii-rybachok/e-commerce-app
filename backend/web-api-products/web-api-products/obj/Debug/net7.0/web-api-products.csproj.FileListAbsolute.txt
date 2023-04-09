@@ -205,3 +205,4 @@ D:\серйозна тема\portfolio_projects\react\e-commerce\backend\web-api
 D:\серйозна тема\portfolio_projects\react\e-commerce\backend\web-api-products\web-api-products\obj\Debug\net7.0\web-api-products.csproj.CopyComplete
 D:\серйозна тема\portfolio_projects\react\e-commerce\backend\web-api-products\web-api-products\obj\Debug\net7.0\web-api-products.genruntimeconfig.cache
 D:\серйозна тема\portfolio_projects\react\e-commerce\backend\web-api-products\web-api-products\obj\Debug\net7.0\ref\web-api-products.dll
+D:\серйозна тема\portfolio_projects\react\e-commerce\backend\web-api-products\web-api-products\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
