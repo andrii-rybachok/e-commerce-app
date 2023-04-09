@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Cors;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using web_api_products.DataBase;
@@ -13,11 +14,14 @@ namespace web_api_products.Controllers
 	[EnableCors("LocalHostPolicy")]
 	public class ShopController : ControllerBase
 	{
-		private readonly ShopDB _context;
 		const int maxPopularProducts = 10;
-		public ShopController(ShopDB context)
+		private readonly ShopDB _context;
+		private readonly IMapper _mapper;
+		
+		public ShopController(ShopDB context,IMapper mapper)
 		{
 			_context = context;
+			_mapper = mapper;
 		}
 
 		[HttpGet("promoted")]
@@ -39,7 +43,7 @@ namespace web_api_products.Controllers
 			List<ProductDTO> products = new List<ProductDTO>();
 			foreach (int productId in randProductIds)
 			{
-				products.Add(Mappers.ProductDTOMapper().Map<ProductDTO>(await _context.Products.Include(x => x.ProductImages).FirstOrDefaultAsync(x => x.Id == productId)));
+				products.Add(_mapper.Map<ProductDTO>(await _context.Products.Include(x => x.ProductImages).FirstOrDefaultAsync(x => x.Id == productId)));
 			}
 			return products;
 		}
@@ -48,7 +52,7 @@ namespace web_api_products.Controllers
 		{
 			//You can implement method to get popular categories, but for now it takes firsst 4 categories
 			var popularCategories = await _context.Categories.Take(4).ToListAsync();
-			return Mappers.PopularCategoryDTOMapper().Map<List<PopularCategoryDTO>>(popularCategories);
+			return _mapper.Map<List<PopularCategoryDTO>>(popularCategories);
 		}
 		[HttpGet("popular")]
 		public async Task<ActionResult<IEnumerable<ProductDTO>>> GetPopularProducts(string categoryName)
@@ -59,7 +63,7 @@ namespace web_api_products.Controllers
 				.Where(x => x.Category.Name.Equals(categoryName))
 				.Take(maxPopularProducts)
 				.ToListAsync();
-			return Mappers.ProductDTOMapper().Map<List<ProductDTO>>(popularProducts);
+			return _mapper.Map<List<ProductDTO>>(popularProducts);
 		}
 
 	}

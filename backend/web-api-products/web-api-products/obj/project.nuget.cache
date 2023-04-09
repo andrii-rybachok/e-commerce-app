@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "OVbnIeAp2Rg2UNyISpcrT0g03fkbMmAhxWSnvLdGtnPS79In3ji5Q6BxCaNFeaDNwaatZHvbXAIj0AdzxPaVqQ==",
+  "dgSpecHash": "aNkA5ZlJ2nO3fRMTpzzfwIr1XGbUYa2PC9P96mvtzDSG66zF0JjuwQtD9Ncs0ggaAuiXgVsdebwDWpxTjSQLKQ==",
   "success": true,
   "projectFilePath": "D:\\серйозна тема\\portfolio_projects\\react\\e-commerce\\backend\\web-api-products\\web-api-products\\web-api-products.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Animeshka\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\Animeshka\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\Animeshka\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Animeshka\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\Animeshka\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",

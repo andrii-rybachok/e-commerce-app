@@ -11,6 +11,7 @@ import AdProducts from "./advertisingProducts/AdProducts";
 import ProsPage from "./pros/ProsPage";
 import Comments from "./fakeComments/Comments";
 import Brands from "./brands/Brands";
+import NewsPage from "./news/NewsPage";
 
 export default function HomePage(){
     let test:IProductPreview={
@@ -32,6 +33,7 @@ export default function HomePage(){
                     <ProsPage/>
                     <Comments/>
                     <Brands/>
+                    <NewsPage/>
                 </div>
             </PopularProductsDataProvider>
         </MainOfferDataProvider>

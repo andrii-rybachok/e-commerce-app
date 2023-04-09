@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.FileProviders;
 using web_api_products.DataBase;
 using web_api_products.Models;
+using web_api_products.Utils;
 
 var MyAllowSpecificOrigins = "LocalHostPolicy";
 var builder = WebApplication.CreateBuilder(args);
@@ -25,7 +26,7 @@ builder.Services.AddDefaultIdentity<ShopUser>(options => options.SignIn.RequireC
 	.AddEntityFrameworkStores<ShopDB>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
+builder.Services.AddAutoMapper(typeof(MapperConfig));
 var app = builder.Build();
 
 if (File.Exists(@"BaseProductImages/Headphones/1_1.jpg"))
