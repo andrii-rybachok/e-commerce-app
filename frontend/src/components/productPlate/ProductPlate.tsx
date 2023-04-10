@@ -4,17 +4,11 @@ import IProductPreview from '@/types/products/product/IProductPreview';
 import styles from './ProductPlate.module.css';
 import { useRef, useState } from 'react';
 import { forEachChild } from 'typescript';
+import useStars from '@/customHooks/useStars';
 
 export default function ProductPlate({product}:{product:IProductPreview}){
     const [over, setOver] = useState(false);
-    const stars = [
-        <FontAwesomeIcon icon={solid("star")} />,
-        <FontAwesomeIcon icon={solid("star")} />,
-        <FontAwesomeIcon icon={solid("star")} />,
-        <FontAwesomeIcon icon={solid("star")} />,
-        <FontAwesomeIcon icon={solid("star")} />,
-    ]
-    
+    const stars = useStars({rating:product.rating});
     let imageName = over?product.secondImage:product.previewImage;
     return(
         <div className={styles.plate} onMouseOver={()=>setOver(true)} onMouseOut={()=>setOver(false)}>

@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import DefaultHeader from "./header/DefaultHeader";
 
 import DefaultNavigation from "./navigation/DefaultNavigation";
+import Footer from "./footer/Footer";
 
 
 export default function DefaultLayout(){
@@ -12,7 +13,7 @@ export default function DefaultLayout(){
             <main>
                <Outlet/>
             </main>
-            
+            <Footer/>
         </>
     );
 }

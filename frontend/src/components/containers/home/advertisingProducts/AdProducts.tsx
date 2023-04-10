@@ -6,24 +6,18 @@ import { solid ,regular} from '@fortawesome/fontawesome-svg-core/import.macro'
 import { useMainOffer } from "../providers/MainOfferProvider";
 import { useState } from "react";
 import Indicator from "@/components/indicator/Indicator";
+import usePagination from "@/customHooks/usePagination";
+import useStars from "@/customHooks/useStars";
 
 export default function AdProducts(){
     const products = useMainOffer();
-    const [currentImg, setCurrentImg] = useState<number>(0);
-    function handleSlide(id:number){
-      setCurrentImg(id);       
-      // fadeInScrollItems();     
-  }
-  
-    if(products.length===0 &&products!=undefined) return (<h1>Loading...</h1>);
-    const indicators = [];
-    for (let index = 0; index < 2; index++) {
-        let isActive = currentImg===index?true:false;
-        indicators.push(     
-            <Indicator key={index} isActive={isActive} onClick={()=>handleSlide(index)}/>
-        )
-    }
-    let product = products.at(currentImg);
+    const pageSystem = usePagination({maxItemsOnPage:1,
+      itemsLength:2}); 
+      let product = products.at(pageSystem.pagination.currentPage);
+      var stars = useStars({rating:product?.rating});
+    if(products.length===0 &&products!=undefined) return (<h1>Loading...</h1>)
+
+    
     return (
       <>
         <section className={bigStyles.block}>
@@ -53,7 +47,7 @@ export default function AdProducts(){
                 </button>
               </div>
               <div className={bigStyles.indicators}>
-                {indicators}
+                {pageSystem.indicators}
               </div>
             </div>
           </div>
@@ -65,21 +59,18 @@ export default function AdProducts(){
       </>
     );
 }
-const stars = [
-  <FontAwesomeIcon icon={solid("star")} />,
-  <FontAwesomeIcon icon={solid("star")} />,
-  <FontAwesomeIcon icon={solid("star")} />,
-  <FontAwesomeIcon icon={solid("star")} />,
-  <FontAwesomeIcon icon={solid("star")} />,
-];
+
 function LongProductPlate({product}:{product:IProductPreview|any}){
+  const stars=useStars({rating:product.rating})
   return (
     <div className={productStyles.plate}>
-      <img
-        src={"https://localhost:7100/images/big/" + product.previewImage}
-        alt=""
-        className={productStyles.previewImage}
-      />
+      <div className={productStyles.imgBlock}>
+        <img
+          src={"https://localhost:7100/images/big/" + product.previewImage}
+          alt=""
+          className={productStyles.previewImage}
+        />
+      </div>
       <div>
           <a className={productStyles.name}>{product.name}</a>
           <span className={productStyles.price}>${product.price}</span>

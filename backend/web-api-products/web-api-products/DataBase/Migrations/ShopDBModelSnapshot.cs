@@ -526,6 +526,9 @@ namespace web_api_products.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<double>("Rating")
+                        .HasColumnType("float");
+
                     b.HasKey("Id");
 
                     b.HasIndex("CategoryId");
@@ -730,6 +733,7 @@ namespace web_api_products.Migrations
                             Name = "Bose QuietComfort 35 II",
                             Price = 349.99000000000001,
                             ProducerId = 1,
+                            Rating = 1.99,
                             HeadphoneType = 0
                         },
                         new
@@ -740,6 +744,7 @@ namespace web_api_products.Migrations
                             Name = "Sony WH-1000XM4",
                             Price = 349.99000000000001,
                             ProducerId = 2,
+                            Rating = 2.0,
                             HeadphoneType = 2
                         },
                         new
@@ -750,6 +755,7 @@ namespace web_api_products.Migrations
                             Name = "Apple AirPods Pro",
                             Price = 249.99000000000001,
                             ProducerId = 3,
+                            Rating = 4.5,
                             HeadphoneType = 1
                         },
                         new
@@ -760,6 +766,7 @@ namespace web_api_products.Migrations
                             Name = "Samsung Galaxy Buds Pro",
                             Price = 199.99000000000001,
                             ProducerId = 4,
+                            Rating = 5.0,
                             HeadphoneType = 2
                         },
                         new
@@ -770,6 +777,7 @@ namespace web_api_products.Migrations
                             Name = "Sonos Beam",
                             Price = 399.99000000000001,
                             ProducerId = 1,
+                            Rating = 4.0,
                             HeadphoneType = 0
                         },
                         new
@@ -780,6 +788,7 @@ namespace web_api_products.Migrations
                             Name = "Bose Soundbar 700",
                             Price = 799.99000000000001,
                             ProducerId = 2,
+                            Rating = 3.0,
                             HeadphoneType = 1
                         },
                         new
@@ -790,6 +799,7 @@ namespace web_api_products.Migrations
                             Name = "Vizio Elevate",
                             Price = 999.99000000000001,
                             ProducerId = 3,
+                            Rating = 2.0,
                             HeadphoneType = 2
                         },
                         new
@@ -800,6 +810,7 @@ namespace web_api_products.Migrations
                             Name = "LG SK10Y",
                             Price = 749.89999999999998,
                             ProducerId = 4,
+                            Rating = 1.7,
                             HeadphoneType = 0
                         });
                 });
@@ -823,6 +834,7 @@ namespace web_api_products.Migrations
                             Name = "MacBook Air",
                             Price = 999.99000000000001,
                             ProducerId = 5,
+                            Rating = 3.4399999999999999,
                             GraphicCard = "Intel Iris Plus Graphics"
                         },
                         new
@@ -833,6 +845,7 @@ namespace web_api_products.Migrations
                             Name = "Asus ZenBook UX425",
                             Price = 1199.99,
                             ProducerId = 6,
+                            Rating = 4.1100000000000003,
                             GraphicCard = "Intel Iris Xe Graphics"
                         });
                 });
