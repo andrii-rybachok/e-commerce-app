@@ -1,4 +1,104 @@
 .footer{
     height: 511px;
     background-color: #E2F4FF;
+    margin-top: 100px;
 }
+.subBlock{
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    height: 139px;
+    margin-top: 40px;
+}
+.footerWrapper{
+    composes : topWrapper from '@/Default.module.css';
+    height: 100%;
+    overflow: hidden;
+}
+.subTitle{
+    color: #1B5A7D;
+    font-size: 30px;
+    font-family: "PoppinsBold";
+    margin-right: 137px;
+}
+.subBtn{
+    composes : defaultPrimaryBtn from '@/Default.module.css';
+    width: 388px;
+    height: 63px;
+    margin-right: 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+}
+.telBlock{
+    width: 197px;
+    height: 45px;
+    display: flex;
+}
+.telBlock>span{
+    font-size: 14px;
+    font-family: "PoppinsSemiBold";
+    color: #606060;
+    margin-left: 20px;
+}
+.telBlock>svg{
+    color:#EDA415;
+    height: 45px;
+    width: 45px;
+}
+.bottomPart{
+    margin-top: 41px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    height: 39px;
+    width: 140px;
+    margin-bottom: 41px;
+}
+.leftPart{
+    width: 250px;
+}
+.leftPart>p{
+    margin-top: 0;
+    width: 183px;
+    font-size: 16px;
+    color: #1B5A7D;
+    margin-bottom: 36px;
+}
+.brandIcons{
+    border-top: 1px solid #9D9D9D;
+}
+.brandIcons>a>svg{
+    margin-right: 35px;
+    height: 24px;
+    width: 24px;
+    color: #3B3B3B;
+    padding-top: 20px;
+}
+.list{
+    color:#1B5A7D;
+}
+.list>h5{
+    font-family: "PoppinsSemiBold";
+    font-size: 19.38px;
+}
+.list>ul{
+    list-style: none;
+    padding: 0;
+    margin-left: 20px;
+}
+.list>ul>a>li{
+    font-size: 19px;
+    font-family: "PoppinsRegular";
+}
+.list>ul li::before {
+    content: "\2022"; 
+    color: #D9D9D9; 
+    font-weight: bolder; 
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em; 
+  }

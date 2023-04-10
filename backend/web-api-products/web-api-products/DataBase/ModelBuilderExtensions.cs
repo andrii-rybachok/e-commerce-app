@@ -52,7 +52,7 @@ namespace web_api_products.DataBase
 				new Headphone { Id=5,Name = "Sonos Beam", Description = "Smart soundbar for TV", Price = 399.99,ProducerId=1, HeadphoneType= HeadphoneType.TWS, CategoryId=1},
 				new Headphone { Id=6,Name = "Bose Soundbar 700", Description = "Smart soundbar for TV", Price = 799.99,ProducerId=2, HeadphoneType= HeadphoneType.Wired, CategoryId=1},
 				new Headphone { Id=7,Name = "Vizio Elevate", Description = "Dolby Atmos soundbar for TV", Price = 999.99,ProducerId=3, HeadphoneType= HeadphoneType.Wireless, CategoryId=1},
-				new Headphone { Id=8,Name = "LG SK10Y", Description = "Dolby Atmos soundbar for TV", Price = 749.9,ProducerId=4, HeadphoneType= HeadphoneType.TWS, CategoryId=1}
+				new Headphone { Id=8,Name = "LG SK10Y", Description = "Dolby Atmos soundbar for TV",Price = 749.9,ProducerId=4, HeadphoneType= HeadphoneType.TWS, CategoryId=1}
 			};
 			modelBuilder.Entity<Headphone>().HasData(headphones);
 			var laptops = new List<Laptop>

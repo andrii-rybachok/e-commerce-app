@@ -30,12 +30,20 @@
     color: #ACACAC;
 }
 .stars>svg{
+    width: 20px;
+    height: 20px;
     margin-right: 10px;
-    transition: 0.1s ease-out;
 }
 .previewImage{
     margin-right: 70px;
     display: block;
     max-width: 202px;
     max-height: 168px;
+}
+.imgBlock{
+    width: 202px;
+    height: 168px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
